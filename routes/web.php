@@ -1,5 +1,6 @@
 <?php
 
+use app\Controllers\dashboard\BeisbolController;
 use app\Controllers\web\AuthController;
 use app\Controllers\web\GuestController;
 use app\Controllers\web\ProfileController;
@@ -61,6 +62,8 @@ Route::get('logout', [AuthController::class, 'logout']);
 Route::get('web', [WebController::class, 'index']);
 
 Route::get('web/profile', [ProfileController::class, 'index']);
+
+Route::get('web/home', [BeisbolController::class, 'index']);
 
 
 /*
